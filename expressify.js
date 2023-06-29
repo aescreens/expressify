@@ -28,7 +28,7 @@ function compileFile(filepath) {
 
         // Convert line breaks to '\r', escape single quotes and wrap each line in single quotes
         // Add an indentation of 4 spaces before each line
-        let lines = data.split('\n').map(line => `    '${line.replace(/\r/g, '').replace(/'/g, "\\'")}\\r'`);
+        let lines = data.split('\n').map(line => `    '${line.replace(/\r/g, '').replace(/\\/g, '\\\\').replace(/'/g, "\\'")}\\r'`);
         // Remove the last \\r from the final line of the file
         lines[lines.length - 1] = lines[lines.length - 1].replace(/\\r'$/, '\'');
         let converted = lines.join(' +\n');
