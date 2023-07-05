@@ -15,7 +15,7 @@ Expressify handles all the tedious string formatting, allowing you to focus on w
 - Clone or download this repository.
 - Install the necessary dependencies using `npm install`.
 - Place your After Effects Expression JavaScript files inside the source folder.
-- Run `node Expressify.js` to start Expressify.
+- Run `node expressify.js` to start Expressify.
 - The compiled output will be available in `output/ExpressionLib.js`.
 - Whenever a script inside the scripts folder is updated, a corresponding update will be automatically made in `ExpressionLib.js`.
 
@@ -34,7 +34,7 @@ Next, navigate to the project directory and install the dependencies via npm:
 `npm install`
 
 This will install all the required dependencies mentioned above. Once everything is installed, you can run Expressify by executing the following command in the project directory:
-`node Expressify.js`
+`node expressify.js`
 
 Now, whenever you save an After Effects Expression JavaScript file in the `scripts` folder, Expressify will automatically update the `ExpressionLib.js` with the properly formatted string version of your script.
 
